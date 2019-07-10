@@ -7,7 +7,7 @@
 ##For example if you have an SBP saved as L8.SGY
 segyread >l8.su tape=L8.SGY
 
-## To migrate, you need to have delayrt = 0. You can apply this delay with sushift command which will lead to a #trace starting on t=0.0 ms. You may also vanish this value with suchw saving it to apply later. You also need to #have a different cdp value for each shot, which can be obtained with suchw.
+##To migrate, you need to have delayrt = 0. You can apply this delay with sushift command which will lead to a #trace starting on t=0.0 ms. You may also vanish this value with suchw saving it to apply later. You also need to #have a different cdp value for each shot, which can be obtained with suchw.
 suchw <l8Delrt.su key1=cdp key2=tracl a=0 b=1 c=0 d=1 e=1 f=1 >l8DelrtCdp.su
 
 ##show headers to check if the change was applied
